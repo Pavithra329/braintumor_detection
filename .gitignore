@@ -4,3 +4,5 @@
 # Dataset:
 dataset
 
+# Machine learning model files
+my_brain_tumor_classifier.keras

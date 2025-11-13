@@ -105,7 +105,7 @@ model.compile(optimizer=Adam(learning_rate=0.0001),
 # Parameters
 batch_size = 20
 steps = int(len(train_paths) / batch_size)  # Steps per epoch
-epochs = 5
+epochs = 3
 
 # Train the model
 history = model.fit(datagen(train_paths, train_labels, batch_size=batch_size, epochs=epochs),
@@ -127,5 +127,5 @@ print(classification_report(test_labels_encoded, np.argmax(test_predictions, axi
 
 
 # Saviung the model
-model.save('my_brain_tumor_classifier')  # This creates a directory
+model.save('my_brain_tumor_classifier.keras')  # This creates a directory
 print("Model saved successfully in 'my_brain_tumor_classifier' directory.")
